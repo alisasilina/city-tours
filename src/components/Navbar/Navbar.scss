@@ -1,0 +1,32 @@
+@import '../../index';
+
+.navbar {
+  img {
+    filter: hue-rotate(98deg) brightness(0.9);
+  }
+  background: $dark;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+.nav-link {
+  color: $back;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.2s linear;
+  &:hover {
+    color: $light;
+  }
+}
+.active {
+  color: $light;
+}
